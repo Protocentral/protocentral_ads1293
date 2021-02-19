@@ -1,6 +1,9 @@
 ProtoCentral ADS1293 breakout board
 ================================
 ![ADS1293 Breakout](docs/img/IMG_20201109_205852905.jpg)
+
+If you don't already have one, you can buy [ProtoCentral ads1293 breakout here.]()
+
 Are you looking for a miniature that can read your heart? Well, here it is!!! The ADS1293 breakout board has a capacity of 3 channels and the integration of 4 leads to the reading of the electrical activity of the heart. The ADS1293 is a simple ECG breakout that delivers excellent measurement and precision data.
 
 This breakout board for the TI ADS1293 Analog front-end IC with three High-Resolution Digital ECG Channels With Simultaneous Pace Output helps you measure both ECG and respiration. This is a simple board to connect ECG / Respiration to your Arduino, Raspberry Pi or any microcontroller you like.
@@ -31,6 +34,24 @@ Includes
 | CS              | Chip Select          |  D10             |
 | vcc             | Digital VDD          |  +5V             |
 | GND             | Digital Gnd          |  Gnd             |
+
+
+## Running the Arduino Sketch
+If you have correctly installed the libraries, the example sketeches should now be available from within Arduino.
+If its not showing, please, [Download the Arduino Sketch from our repository here](https://github.com/Protocentral/protocentral-ads1293-arduino) and place it in the arduino libraries folder.
+
+Open up your Arduino IDE and run the Arudino sketch (.ino) file in the archive that you downloaded. Your Arduino should now be programmed to read the ecg data and sending over the USB-UART.
+
+
+## Using the ProtoCentral OpenView GUI
+The GUI for visualizing the ads1293 data is written in Processing, based on Java and is cross-compilable across platforms.
+
+![Wearing the Electrode](docs/ads1293_openview.gif)
+
+Java 8 is required on all platforms for running the processing-based GUI application. You can download Java for your platform from the Official Java website.
+
+You can download and install ProtoCentral OpenView from here: https://github.com/Protocentral/protocentral_openview
+
 
 
 License Information
